@@ -18,7 +18,7 @@ Users will be able to:
 
 This single page app will consist of two main fields. A control panel/input fields on the left and a map on the right. The majority of the users time will be spent adjusting the sliders and input information on the left but the map will also provide a nice visual for the user as well. The main input fields will be car, breaks, food, and destination. 
 
-![wireframe](docs/wireframes/trippycalc.jpg)
+![wireframe](docs/wireframes/trippycalc.png)
 
 ### Architecture & Technologies
 
