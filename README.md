@@ -2,7 +2,7 @@
 
 ### Background
 
-TrippyCalc is a an interactive to calculate the cost of a road trip. 
+TrippyCalc is a an interactive way to calculate the cost of a road trip. 
 
 ### Functionality & MVP
 
