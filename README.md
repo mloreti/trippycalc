@@ -8,11 +8,12 @@ TrippyCalc is a an interactive way to calculate the cost of a road trip.
 
 Users will be able to:
 
-- [ ] Select their car, which will find their avg mpg
+- [ ] Use a slider to select their car's MPG
 - [ ] See a map of their trip
 - [ ] Change variables such as food stops and bathroom breaks
 - [ ] See a price estimate of the trip
 - [ ] Share their trip via email
+- [ ] Add pitstops to their route
 
 ### Wireframes
 
