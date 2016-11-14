@@ -32,10 +32,10 @@ This project will be implement with the following technolgies:
 
 ### Implementation Timeline
 
-** Day 1 ** : Setup app files and webpack. Setup entry file and ensure webpack and any node dependencies are working.
+**Day 1:** Setup app files and webpack. Setup entry file and ensure webpack and any node dependencies are working.
 
-** Day 2 ** : Get the GoogleMaps api rending a map and using user input to show directions/routes. Gather necessary data for calcuation (car MPG, gas prices, etc...).
+**Day 2:** Get the GoogleMaps api rending a map and using user input to show directions/routes. Gather necessary data for calcuation (car MPG, gas prices, etc...).
 
-** Day 3 ** : Implement sliders and other interactive ways for user to input data.
+**Day 3:** Implement sliders and other interactive ways for user to input data.
 
 ** Day 4 ** : Find way to share trip information via email/pdf.
