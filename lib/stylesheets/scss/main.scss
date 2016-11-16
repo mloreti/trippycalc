@@ -1,3 +1,7 @@
+@import 'partials/input';
+@import 'partials/estimates';
+@import 'partials/sliders';
+
 html, body {
   font-family: 'Helvetica Neue';
   width: 100%;
@@ -5,6 +9,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 
 #app {
   height: 100%;
