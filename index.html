@@ -4,9 +4,39 @@
     <meta charset="utf-8">
     <title>TrippyCalc</title>
     <link rel="stylesheet" href="./lib/stylesheets/css/main.css" media="screen" title="no title">
-    <script src="bundle.js" charset="utf-8"></script>
+
+    <script src="./assets/vendor/jquery/jquery.slim.min.js" charset="utf-8"></script>
+    <script src="./assets/vendor/vue/vue.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-h6Kj0WSP3sJOf3g4FLAcvtaVt9mUODM&callback=app.initMap" async defer></script>
+
   </head>
   <body>
-      <h1>Hello</h1>
+    <div id="app">
+      <div id="user-input">
+        <input id="start" placeholder="origin" v-model="origin">
+        <input id="end" placeholder="destination" v-model="destination">
+        <label>MPG
+          <input type="range" v-model="mpg" min="0" max="100">
+          <br>
+          <span>{{mpg}}</span>
+        </label>
+        <label>Breaks
+          <input type="range" v-model="breaks" min="0" max="10">
+          <br>
+          <span>{{breaks}}</span>
+        </label>
+        <label>Speed
+          <input type="range" v-model="speed" min="55" max="110">
+          <br>
+          <span>{{speed}}</span>
+        </label>
+        <br>
+        <span>{{ distance }} miles</span>
+        <span>${{cost}}</span>
+        <span>{{time}} minutes</span>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script src="./lib/js/scripts.js"></script>
   </body>
 </html>

@@ -1,4 +1,25 @@
 html, body {
-  font-family: 'Helvetica Neue'; }
+  font-family: 'Helvetica Neue';
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+#app {
+  height: 100%;
+  widows: 100%;
+  display: flex;
+  flex-direction: row; }
+
+#user-input {
+  display: flex;
+  width: 50%;
+  flex-direction: column; }
+
+#map {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=main.css.map */

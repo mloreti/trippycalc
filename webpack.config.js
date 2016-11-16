@@ -4,6 +4,10 @@ var webpack = require('webpack');
 module.exports = {
   entry: './lib/js/scripts.js',
   output: { path: __dirname, filename: 'bundle.js' },
+  devtool: 'source-map',
+  resolve: {
+    alias: { 'vue$': 'vue/dist/vue.js' }
+  },
   module: {
     loaders: [
       {
