@@ -9,6 +9,7 @@
 
     <script src="./assets/vendor/jquery/jquery.slim.min.js" charset="utf-8"></script>
     <script src="./assets/vendor/vue/vue.js"></script>
+    <script src="bundle.js" charset="utf-8"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-h6Kj0WSP3sJOf3g4FLAcvtaVt9mUODM&callback=app.initMap" async defer></script>
   </head>
   <body>
@@ -16,8 +17,13 @@
       <div id="user-input">
 
         <div class="map-input section">
-          <input id="start" placeholder="origin" v-model="origin">
-          <input id="end" placeholder="destination" v-model="destination">
+          <div class="fields">
+            <input id="start" placeholder="origin" v-model="origin">
+            <input id="end" placeholder="destination" v-model="destination">
+            <br>
+            <input class="pitstop" placeholder="pitstop">
+          </div>
+          <input type="button" id="calc" value="add stop">
         </div>
 
         <div class="sliders section">

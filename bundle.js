@@ -60,12 +60,21 @@
 /* 1 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var sections = function sections() {};
+	var sections = function sections() {
+	  var parent = $('.fields');
+	  $('#calc').on('click', function () {
+	    if ($('.pitstop').last()[0].value.length != 0) {
+	      var child = $("<input class='pitstop' placeholder='pitstop'>");
+	      $("#new-stop").remove();
+	      parent.append(child);
+	    }
+	  });
+	};
 	
 	exports.default = sections;
 
