@@ -44,7 +44,7 @@ h1 {
   height: 100%;
   widows: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 #user-input {
