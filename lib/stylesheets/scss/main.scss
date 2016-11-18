@@ -52,7 +52,6 @@ h1 {
   width: 50%;
   flex-direction: column;
   padding: 50px;
-  border-right: 1px solid #aaa;
 }
 
 #map {
@@ -65,7 +64,9 @@ h1 {
 #directions{
   display: none;
   width: calc(50% - 110px);
+  overflow-y: scroll;
   flex-direction: column;
+  background: #eee;
   padding: 50px 50px 50px 50px;
 }
 

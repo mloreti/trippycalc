@@ -69,7 +69,6 @@
       <div id="directions">
         <div class="info">
           <h1>Route Summary</h1>
-          <button class="export">Export</button>
         </div>
         <h4>Start: <span>{{ origin }}</span></h4>
         <h4 v-for="stop in pitstops">
@@ -79,7 +78,7 @@
         <h2>Steps</h2>
         <ol>
           <li v-for="steps in directions">
-            {{steps}}
+            <span v-html='steps'></span>
           </li>
         </ol>
       </div>

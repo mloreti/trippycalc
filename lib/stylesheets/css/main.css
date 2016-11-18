@@ -148,8 +148,7 @@ h1 {
   display: flex;
   width: 50%;
   flex-direction: column;
-  padding: 50px;
-  border-right: 1px solid #aaa; }
+  padding: 50px; }
 
 #map {
   height: 100%;
@@ -160,7 +159,9 @@ h1 {
 #directions {
   display: none;
   width: calc(50% - 110px);
+  overflow-y: scroll;
   flex-direction: column;
+  background: #eee;
   padding: 50px 50px 50px 50px; }
 
 #header {
