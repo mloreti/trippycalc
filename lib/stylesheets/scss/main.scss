@@ -1,15 +1,44 @@
 @import 'partials/input';
 @import 'partials/estimates';
 @import 'partials/sliders';
+@import 'partials/directions';
 
 html, body {
-  font-family: 'Helvetica Neue';
+  font-family: 'Source Sans Pro','Helvetica Neue';
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
+h1, h2, h3, h4, p, a, li, ul, button {
+  padding: 0;
+  margin: 0;
+  color: rgba(100, 100, 100, 1);
+}
 
+button {
+  &:active, &:focus {
+    outline: 0;
+  }
+}
+
+.section {
+  border-top: 1px solid #aaa;
+  padding-top: 10px;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 42px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
 
 #app {
   height: 100%;
@@ -22,6 +51,8 @@ html, body {
   display: flex;
   width: 50%;
   flex-direction: column;
+  padding: 50px;
+  border-right: 1px solid #aaa;
 }
 
 #map {
@@ -29,4 +60,34 @@ html, body {
   width: 50%;
   display: flex;
   flex-direction: column;
+}
+
+#directions{
+  display: none;
+  width: calc(50% - 110px);
+  flex-direction: column;
+  padding: 50px 50px 50px 50px;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  .switcher {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    button {
+      background: none;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    button.active {
+      border: 1px solid #111;
+    }
+  }
 }

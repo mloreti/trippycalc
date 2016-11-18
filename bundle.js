@@ -50,10 +50,15 @@
 	
 	var _sections2 = _interopRequireDefault(_sections);
 	
+	var _switcher = __webpack_require__(2);
+	
+	var _switcher2 = _interopRequireDefault(_switcher);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	$(function () {
 	  (0, _sections2.default)();
+	  (0, _switcher2.default)();
 	});
 
 /***/ },
@@ -66,17 +71,44 @@
 	  value: true
 	});
 	var sections = function sections() {
-	  var parent = $('.fields');
 	  $('#calc').on('click', function () {
-	    if ($('.pitstop').last()[0].value.length != 0) {
-	      var child = $("<input class='pitstop' placeholder='pitstop'>");
-	      $("#new-stop").remove();
+	    var parent = $('.pitstops');
+	    if (parent.children().length == 0 || $('.pitstop').last()[0].value.length != 0) {
+	      var child = $("<div class='stop'><input class='pitstop' placeholder='pitstop'><span class='delete-stop'>X</span></div>");
 	      parent.append(child);
 	    }
+	    $('.delete-stop').on('click', function (e) {
+	      $(e.target).parent().remove();
+	    });
 	  });
 	};
 	
 	exports.default = sections;
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var switcher = function switcher() {
+	  $('.switcher button').on('click', function (e) {
+	    $(e.target).siblings().removeClass("active");
+	    $(e.target).addClass("active");
+	    if ($(e.target).text() == 'List') {
+	      $('#map').attr('style', 'display: none');
+	      $('#directions').attr('style', 'display: -webkit-flex; display: flex');
+	    } else {
+	      $('#directions').attr('style', 'display: none');
+	      $('#map').attr('style', 'display: -webkit-flex; display: flex; overflow: hidden; position: relative');
+	    };
+	  });
+	};
+	
+	exports.default = switcher;
 
 /***/ }
 /******/ ]);
