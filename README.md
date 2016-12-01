@@ -15,14 +15,6 @@ Users can add pitstops which will update the map, text directions, and estimates
 
 <img src="docs/images/pitstops.png" style="height:200px;"/>
 
-#### Adjustments
-
-<img src="docs/images/adjustments.png" style="height:200px;"/>
-
-#### Estimates
-
-<img src="docs/images/estimates.png" style="width:350px;"/>
-
 ### Architecture and Frameworks
 
 TrippyCalc was built with VueJS and jQuery. Vue handled rendering and updating the map as the route and adjustments changed. When a successful request was completed to the GoogleMaps API I would store that response and later use the information to render the data. For examples the directions were saved into an array and displayed on the page using Vue's `v-for`.
