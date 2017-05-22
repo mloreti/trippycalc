@@ -1,4 +1,4 @@
-## TrippyCalc  | [Live](mloreti.github.io/trippycalc)
+## TrippyCalc  | [Live](https://mloreti.github.io/trippycalc)
 
 
 ![alt](docs/images/trippycalc.png)
